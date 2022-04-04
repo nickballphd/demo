@@ -6,6 +6,7 @@ const base=window.location.protocol + "//" + window.location.host + "/"
 
 
 async function post_data(payload){
+    console.log('in post_data. payload=',payload)
     //This function is used to invoke a function in Google App Script to interact with Airtable. This is desireable so that we can isolate the information needed to interact with the data from the client browser.
     working()//This function is used to present a visual cue to the user that the site is performing an update.
     if(document.cookie){//cookies are used to manage authenticated user information. The cookies are sent to Google App Script to ensure that users have appropriate authication and credentials update the database.
